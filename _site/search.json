@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "about-pt.html",
+    "href": "about-pt.html",
+    "title": "Beatriz Milz",
+    "section": "",
+    "text": "Olá! Meu nome é Beatriz, e eu sou uma R-Lady do Brazil 🇧🇷 💜.\nEu sou uma instrutora de tidyverse certificada pelA RStudio, e eu ensino R na Curso-R.\nEu comecei a escrever textos sobre R em 2019.\nEu sou ativa na comunidade de R no Brasil, participando da co-organização de comunidades e eventos, como: R-Ladies São Paulo, Latin-R, e satRday São Paulo.\nEu faço doutorado na Universidade de São Paulo, em Ciências Ambientais. Minha pesquisa é sobre transparência de informações na gestão de recursos hídricos usados para abastecimento público na Macrometrópole Paulista."
+  },
+  {
+    "objectID": "posts/en.html",
+    "href": "posts/en.html",
+    "title": "Bea Milz",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\nGitHub Actions Series 2 - In this post, I will show how you can create a workflow to monitor repositories from the quarto-dev organization on GitHub!\n\n\n\n\nGit\n\n\nGitHub\n\n\nGitHub Actions\n\n\nAutomations\n\n\nRStudio\n\n\n \n\n\n\n\nJul 10, 2022\n\n\nBeatriz Milz\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "",
+    "text": "Português"
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#introdução",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#introdução",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Introdução",
+    "text": "Introdução\nAs vezes precisamos usar alguma senha/Token/Key para rodar um código, como por exemplo ao usar uma API que solicita autenticação. Mas isso significa que devemos escrever a senha no próprio script .R, por exemplo?\nNão! Inclusive isso é um pouco perigoso. Imagina armazenar a senha para um serviço pago, esquecer e disponibilizar o script no GitHub? É receita para receber uma notificação do cartão de crédito cobrando algo que nem usamos… É, já ouvi casos assim!\nEntão neste post trago algumas dicas para evitar salvar as senhas nos scripts quando estiver programando."
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#variáveis-de-ambiente",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#variáveis-de-ambiente",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Variáveis de ambiente",
+    "text": "Variáveis de ambiente\nUma forma de fazer isso é com as variáveis de ambiente (environment variables). Não vou detalhar o conceito de ambientes mas deixei um link nas referências, ao final do post.\nSimplificando, as variáveis de ambientes são objetos que são carregados ao iniciar a sessão do R. Então eles ficarão disponíveis para uso, apesar de não aparecer no painel Environment do RStudio.\nUma forma de saber quais são as nossas variáveis de ambiente é usando a função Sys.getenv() sem argumentos. Atenção, várias variáveis de configuração irão aparecer no output e não recomendo alterá-las.\n\n\n\n\n\n\nExpanda para ver o output da função Sys.getenv()\n\n\n\n\n\n\nSys.getenv()\n\n__CF_USER_TEXT_ENCODING\n                 0x1F5:0x0:0x47\n__CFBundleIdentifier\n                 org.rstudio.RStudio\nCLICOLOR_FORCE   1\nCOMMAND_MODE     unix2003\nDISPLAY          :0\nEDITOR           vi\nGIT_ASKPASS      rpostback-askpass\nGITHUB_PAT       REMOVI-DO-OUTPUT\nHOME             /Users/beatrizmilz\nLANG             en_US.UTF-8\nLaunchInstanceID\n                 CE64F966-8CED-4F36-98D6-0965383D7CE7\nLC_CTYPE         en_US.UTF-8\nLD_LIBRARY_PATH\n                 \nLN_S             ln -s\nLOGNAME          beatrizmilz\nMAKE             make\nMPLENGINE        tkAgg\nPAGER            /usr/bin/less\nPATH             /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/beatrizmilz/Applications/quarto/bin:/Library/TeX/texbin:/usr/texbin:/Applications/RStudio.app/Contents/MacOS:/Users/beatrizmilz/Library/TinyTeX/bin/universal-darwin\nPDF_TABLES       REMOVI-DO-OUTPUT\nPYTHONIOENCODING\n                 utf-8\nR_BROWSER        /usr/bin/open\nR_BZIPCMD        /usr/bin/bzip2\nR_CLI_HAS_HYPERLINK_IDE_HELP\n                 true\nR_CLI_HAS_HYPERLINK_IDE_RUN\n                 true\nR_CLI_HAS_HYPERLINK_IDE_VIGNETTE\n                 true\nR_DOC_DIR        /Library/Frameworks/R.framework/Resources/doc\nR_GZIPCMD        /usr/bin/gzip\nR_HOME           /Library/Frameworks/R.framework/Resources\nR_INCLUDE_DIR    /Library/Frameworks/R.framework/Resources/include\nR_LIBS_SITE      /Library/Frameworks/R.framework/Resources/site-library\nR_LIBS_USER      /Users/beatrizmilz/Library/R/arm64/4.2/library\nR_PAPERSIZE      a4\nR_PDFVIEWER      /usr/bin/open\nR_PLATFORM       aarch64-apple-darwin20\nR_PRINTCMD       lpr\nR_QPDF           /Library/Frameworks/R.framework/Resources/bin/qpdf\nR_RD4PDF         times,inconsolata,hyper\nR_SESSION_TMPDIR\n                 /var/folders/st/0346cszj61928zc133bfr8dm0000gn/T//RtmptDuZaS\nR_SHARE_DIR      /Library/Frameworks/R.framework/Resources/share\nR_STRIP_SHARED_LIB\n                 strip -x\nR_STRIP_STATIC_LIB\n                 strip -S\nR_SYSTEM_ABI     macos,gcc,gxx,gfortran,gfortran\nR_TEXI2DVICMD    /opt/R/arm64/bin/texi2dvi\nR_UNZIPCMD       /usr/bin/unzip\nR_ZIPCMD         /usr/bin/zip\nRMARKDOWN_MATHJAX_PATH\n                 /Applications/RStudio.app/Contents/Resources/resources/mathjax-27\nRS_PPM_FD_READ   71\nRS_PPM_FD_WRITE\n                 102\nRS_RPOSTBACK_PATH\n                 /Applications/RStudio.app/Contents/rpostback\nRS_SHARED_SECRET\n                 aae3fa0b-2378-4433-91b1-23ef6bfbcd3a\nRSTUDIO          1\nRSTUDIO_CLI_HYPERLINKS\n                 true\nRSTUDIO_CONSOLE_COLOR\n                 256\nRSTUDIO_CONSOLE_WIDTH\n                 59\nRSTUDIO_FALLBACK_LIBRARY_PATH\n                 /var/folders/st/0346cszj61928zc133bfr8dm0000gn/T/rstudio-fallback-library-path-LeirDE\nRSTUDIO_PANDOC   /Applications/RStudio.app/Contents/MacOS/quarto/bin/tools\nRSTUDIO_PROGRAM_MODE\n                 desktop\nRSTUDIO_SESSION_PID\n                 99417\nRSTUDIO_SESSION_PORT\n                 50432\nRSTUDIO_USER_IDENTITY\n                 beatrizmilz\nRSTUDIO_WINUTILS\n                 bin/winutils\nSECURITYSESSIONID\n                 186b0\nSED              /usr/bin/sed\nSHELL            /bin/zsh\nSSH_ASKPASS      rpostback-askpass\nSSH_AUTH_SOCK    /private/tmp/com.apple.launchd.rgFEwrNe29/Listeners\nTAR              /usr/bin/tar\nTERM             xterm-256color\nTMPDIR           /var/folders/st/0346cszj61928zc133bfr8dm0000gn/T/\nTZDIR            /var/db/timezone/zoneinfo\nUSER             beatrizmilz\nXPC_FLAGS        0x0\nXPC_SERVICE_NAME\n                 0\n\n\n\nA função Sys.setenv() permite que você salve a senha/token nas variáveis de ambiente. Cuidado, rode essa etapa no console e não salve no script (pois justamente queremos não armazenar as senhas no script, certo?).\n\nSys.setenv(MINHA_SENHA = 1234)\n\nPara buscar o valor salvo na variável, pode usar a função Sys.getenv(). Essa função podemos usar no nosso script sem problemas!\n\nSys.getenv(\"MINHA_SENHA\")\n\n[1] \"1234\""
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#indo-além-com-a-ajuda-do-usethis",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#indo-além-com-a-ajuda-do-usethis",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Indo além com a ajuda do usethis",
+    "text": "Indo além com a ajuda do usethis\nAs variáveis de ambiente podem ser vinculadas ao .Rproj ativo, ou ao usuário do computador. Elas ficam salvas no arquivo .Renviron. Para abrir o arquivo e ver as variáveis de ambiente salvas, você pode usar a função usethis::edit_r_environ():\n\n# Abre as variáveis de ambiente para o usuário do computador\nusethis::edit_r_environ(scope = \"user\")\n#> • Modify '/Users/beatrizmilz/.Renviron'\n#> • Restart R for changes to take effect\n\n# Abre as variáveis de ambiente para o projeto ativo\nusethis::edit_r_environ(scope = \"project\")\n#> ✔ Setting active project to '/Users/beatrizmilz/Documents/GitHub/blog-en'\n#> • Modify '.Renviron'\n#> • Restart R for changes to take effect\n\nO padrão para armazenar variáveis neste arquivo é:\nNOME_VAR='SENHAAQUI12345'\nAtenção! Depois de alterar o arquivo .Renviron, é necessário reiniciar o R para que as mudanças sejam consideradas. Isso porque esse arquivo é carregado ao iniciar o R.\nAtenção 2: Caso você use um arquivo .Renviron vinculado ao seu projeto .Rproj, cuidado ao subir esse arquivo para o GitHub, é perigoso pois pessoas poderão ver suas senhas. Se o seu repositório for público, é essencial que você adicione ele no .gitignore, assim ele será ignorado pelo Git. A função usethis::use_git_ignore() pode nos ajudar nisso:\n\nusethis::use_git_ignore(\".Renviron\")\n#> ✔ Adding '.Renviron' to '.gitignore'"
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#solicitar-a-senha",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#solicitar-a-senha",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Solicitar a senha",
+    "text": "Solicitar a senha\nE quando queremos que a pessoa usuária possa sempre escrever a senha? Existe uma função para isso: rstudioapi::askForPassword(). Podemos inclusive escrever a frase que será mostrada ao perguntar a senha. A senha digitada será retornada como um texto, e podemos salvar em um objeto para utilizar posteriormente no que for necessário.\n\nsenha_informada <- rstudioapi::askForPassword(\n  \"Escreva sua senha por favor!\"\n)\n\n\n\nPop up feito pela função askForPassword."
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#github-actions",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#github-actions",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "GitHub Actions",
+    "text": "GitHub Actions\nE quando precisamos usar senhas em códigos rodados com GitHub Actions (GHA)? Se você não conhece nada sobre GHA, eu tenho alguns posts sobre isso!\nQuando estamos usando GHA, podemos adicionar senhas na sessão SECRETS do GitHub. Assim ninguém (exceto você, quando cria um SECRETS), verá a senha/credenciais.\nIsso fica nas configurações do repositório, e o link usa esse padrão:\nhttps://github.com/SEU-USUARIO/SEU-REPOSITORIO/settings/secrets/actions\nExemplo de um repositório privado meu:\n\n\nPrint screen da página de secrets.\n\n\nTambém é preciso adaptar o código do action para buscar essa variável no Secrets. Exemplo de código:\n      - name: Execute Script\n        env:\n          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}\n          NOME_VAR: ${{ secrets.NOME_VAR }}\n        run: |\n          Rscript \"seu_script.R\"\nCom isso é possível acessar essas variáveis com senha, no script usando a função Sys.getenv('NOME_VAR') que mostrei acima."
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#mais-camadas-de-segurança",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#mais-camadas-de-segurança",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Mais camadas de segurança",
+    "text": "Mais camadas de segurança\nPara mais camadas de segurança, recomendo a leitura da documentação do pacote httr2, no trecho sobre Secret management. Nesse trecho, além de apresentar a opção utilizando a função usethis::edit_r_environ(), também é apresentado as funções httr2::secret_encrypt() e htt2::secret_decrypt().\nEu ainda não testei essas funções pois o pacote httr2 é bem recente. Segundo o autor do pacote (o Hadley Wickham), com essas funções é possível usar criptografia para lidar com as senhas/tokens."
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#conclusão",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#conclusão",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Conclusão",
+    "text": "Conclusão\nEspero que este post seja interessante para você, e que as suas senhas estejam sempre protegidas! Bons estudos e até a próxima!"
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#referências",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#referências",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Referências",
+    "text": "Referências\n\nEnvironments/Ambientes - Hands-On Programming with R\nSecret management - Documentação do pacote httr2"
+  },
+  {
+    "objectID": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#agradecimentos",
+    "href": "posts/2022-09-13-nao-guarde-senhas-no-script/pt/index.html#agradecimentos",
+    "title": "Como usar senhas sem escreve-las nos scripts",
+    "section": "Agradecimentos",
+    "text": "Agradecimentos\n\nJulio Trecenti, pela leitura prévia e sugestões feitas no texto.\nTive a ideia de escrever esse post ao responder uma pergunta feita pela aluna Mari Ribeiro, em um curso da Curso-R. Obrigada Mari!"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nComo usar senhas sem escreve-las nos scripts\n\n\nUsando senhas, tokens e keys no código em R de forma segura.\n\n\n\nSep 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users\n\n\nGitHub Actions Series 2 - In this post, I will show how you can create a workflow to monitor repositories from the quarto-dev organization on GitHub!\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "",
+    "text": "English\nHi!\nThis is the second blog post in the “GitHub Action” Series. We are two weeks from the start of RStudio Conference - rstudio::conf 2022, and this post series is complementary material for the lightning talk that I will present!\nIf you have not read the earlier post in this series yet, I recommend reading it before continuing on this post:"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#what-we-will-talk-about-in-this-post",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#what-we-will-talk-about-in-this-post",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "What we will talk about in this post",
+    "text": "What we will talk about in this post\nThis post is a tutorial on how to use GitHub Actions with an R script, using GitHub on a browser :) We will write a GitHub Action workflow that runs an R script to collect data about the repositories in the quarto organizations and save the result into the GitHub repository.\n\nCreate a GitHub Account\nCreate a repository\nCreate a README.md file (this is optional)\nCreate an R Script\nCreate the workflow\nWatch your awesome automation run"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#creating-your-first-workflow",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#creating-your-first-workflow",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "Creating your first workflow",
+    "text": "Creating your first workflow\nCreate a GitHub account\nTo start using GitHub Actions, first, you need to have an account on GitHub. You can create a new account for free! You also can sign in to your existing account if you already have one.\nCreate a repository\nGitHub Actions workflows work within a repository. So, the next step is to create one!\nIf you don’t know what a repository is, imagine having a directory on your computer, and you store files from a project in that directory. A repository is like that but in the cloud!\nTo create a repository, on the homepage of GitHub, click on the “+” icon in the top right corner and select New repository. Give your repository a name, then choose whether you want it to be public or private. Then click “Create repository”.\n\n\n\n\nFor this example, I created a repository called awesome-gha.\nCreate a README.md file\nNow that we have a repository, we can start creating and adding files to it. There are multiple ways you can interact with GitHub: you can use Git on command line, or clone the repository to your machine and use the RStudio Git Pane, for example. For this post, I will use GitHub in the browser, so even if you are not used to using Git on your machine, it will be possible to follow along.\nFirst, click on “Creating a new file”:\n\n\n\n\nThen, add a name for the file: let’s create a file called README.md. This file is the first thing people see when accessing your repository, so adding some information about your project is nice. Then, you can add text and Markdown code in the “Edit new file” section, and finally, click on “Commit new file” to save your changes.\n\n\n\n\nAwesome! We have a repository, and now we can start working on our GitHub Actions.\n\n\n\n\nCreate an R Script\nNow we can start creating an R script. For a first GitHub Action, it is nice to start with something simple so we understand what is going on. To create a new file, click on “Add file” and then choose “Create new file”:\n\n\n\n\nIn this example, I created an R script in the path 01-monitoring-quarto-repos/script.R and added this code:\n\nprint(\"Hi! Welcome to a GH Actions with an R example :)\")\n\n\n# get information about the repositories on the Quarto organizations.\n\nquarto_orgs <- c(\"quarto-dev\", \"quarto-ext\", \"quarto-journals\")\n\nquarto_repos_raw <-\n  purrr::map(quarto_orgs, ~ gh::gh(\n  \"GET /orgs/{org}/repos\",\n  org = .x,\n  type = \"public\",\n  sort = \"updated\",\n  per_page = 100\n))\n\n\n# transform into a tibble with few cols\nquarto_repos <- quarto_repos_raw |>\n  purrr::flatten() |>\n  purrr::map(unlist, recursive = TRUE)  |>\n  purrr::map_dfr(tibble::enframe, .id = \"id_repo\") |>\n  tidyr::pivot_wider() |>\n  dplyr::transmute(\n    name,\n    url = html_url,\n    description,\n    stars = as.numeric(stargazers_count),\n    forks = as.numeric(forks_count),\n    open_issues = as.numeric(open_issues_count)\n  ) |>\n  dplyr::arrange(dplyr::desc(stars))\n\n\n# write CSV file with the result\nquarto_repos |>\n  readr::write_csv(\"01-monitoring-quarto-repos/quarto_repos.csv\")\n\n# write the README.md file\n\n# create table to add on README\ntable <- quarto_repos |>\n  dplyr::mutate(description = tidyr::replace_na(description, \"\")) |>\n  knitr::kable()\n\n# Write the content on README\npaste0(\n  \"# Repositories from quarto-dev\nMade by [Bea Milz](https://twitter.com/beamilz).\nUpdated with GitHub Actions in \",\nformat(Sys.Date(), '%b %d %Y'),\n\".\n<hr> \\n\n\",\npaste(table, collapse = \"\\n\")\n) |> writeLines(\"01-monitoring-quarto-repos/README.md\")\n\nprint(\"The end! Congrats!\")\n\nCode available here: https://github.com/beatrizmilz/awesome-gha/blob/main/01-monitoring-quarto-repos/script.R\nTo save the file in this path, type 01-rscript/script.R in the blank space for the file’s name. GitHub will understand that we want to create a directory called 01-rscript and then write a file called script.R inside this directory. Copy and paste the code above and click on the green button that says “Commit new file”.\n\n\n\n\nBut what does this code do? First, we need to install all the packages required by the code to run. Then, it accesses the GitHub API and gets information about the public repositories in quarto organizations. Then, it transforms the collected data and creates a nice table. It writes a CSV with the table and also writes in a README.md file! But for now, we only created this file, and to run with GHA, we need to create a file to store the workflow.\nCreate the workflow\nWe store the workflow in a YAML file that defines when and how the action should run.\nBut before we create this file, let’s understand what the code does!\nEvents\nFirst, we need to write the events. The events store information about what can start this workflow!\n\non:\n  schedule: \n    - cron:  \"0 9 * * *\" \n  workflow_dispatch:\n\nIn this example, we will use two events:\n\n\nSchedule: We can set a workflow to start at a scheduled time. I always use a website called crontab guru and its examples to find out how to write schedule that I want in cron syntax! In this example, I wrote \"0 9 * * *\", and according to crontab guru this workflow will be activated every day at 9 am UTC:\n\n\n\n\n\n\n\nWorkflow dispatch: this event allows us to activate the workflow any time that we want. We need to press a button on the GitHub website (I will show a print screen soon), or request the activation using the GitHub API (this example I’ll leave for future posts!).\nName\nWe need to give the workflow a name (don’t use special characters, let’s keep it simple!).\n\nname: 01-rscript\n\nJobs\nThe jobs describe what the computer should do! In this example, we will install R on an Ubuntu machine, run the script and then save the results in the repository.\n\njobs:\n  run-r-script:\n    runs-on: ubuntu-latest # use Ubuntu\n    env:\n      # The GitHub token will be available \n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }} \n    steps:\n      # imports an action from another repository, \n      # that enables the machine\n      # to access the code inside our repository\n      - uses: actions/checkout@v3 \n      # imports an action from another repository, \n      # that installs R on the machine\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          # uses the RStudio Package Manager\n          use-public-rspm: true\n\n        \n      # imports an action from another repository, \n      # that deals with the dependencies\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with: \n          # here we have to add all the packages we used in the script!\n          packages: |\n            any::gh\n            any::dplyr\n            any::tidyr\n            any::readr\n            any::knitr   \n\n      - name: Execute Script\n        # executes the RScript stored in the file\n        # 01-monitoring-quarto-repos/script.R\n        run: |\n          Rscript \"01-monitoring-quarto-repos/script.R\"                        \n\n        # save the results in the repository\n        # using git in the command line\n      - name: Commit results\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n          git add .\n          git commit -m \"Results from R script\" || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\"\n\nThe complete workflow has these three parts: on: (the events that start the workflow), name: (the name of the repository), and jobs: (the instructions for the machine to run).\nWe have a workflow!\nThis is the complete code for the workflow:\n\non:\n  schedule:\n    - cron:  \"0 9 * * *\"\n  workflow_dispatch:\n\nname: 01-rscript\n\njobs:\n  run-r-script:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n    steps:\n      - uses: actions/checkout@v3\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          use-public-rspm: true\n\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          packages: |\n            any::gh\n            any::dplyr\n            any::tidyr\n            any::readr\n            any::knitr\n\n      - name: Execute Script\n        run: |\n          Rscript \"01-monitoring-quarto-repos/script.R\"\n\n      - name: Commit results\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n          git add .\n          git commit -m \"Results from R script\" || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\"-\n\nNow we need to save this into a yaml file. This file must be stored in the .github/workflows directory.\nTo create a new file, click on “Add file” and then choose “Create new file”:\n\n\n\n\nTo save the file in the right path, type .github/workflows/01-monitoring-quarto-repos.yaml in the blank space for the file’s name. GitHub will understand that we want to create a directory called .github/, and then another called workflows/ inside, and then write a file called 01-monitoring-quarto-repos.yaml inside this directory.\nCopy and paste the code above and click on the green button that says “Commit new file”.\n\n\n\n\nCode available here: https://github.com/beatrizmilz/awesome-gha/blob/main/.github/workflows/01-monitoring-quarto-repos.yaml\nNow we have a repository with a README.md file, an R script inside the 01-monitoring-quarto-repos/ directory, and a GitHub workflow inside the .github/workflows/ directory:"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#watch-your-awesome-automation-run",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#watch-your-awesome-automation-run",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "Watch your awesome automation run",
+    "text": "Watch your awesome automation run\nYAY! Now that we created the files needed, we can first experiment with the workflow_dispatch button. I made a quick GIF on how to trigger a GHA with the button:\n You can see this page at this link: https://github.com/beatrizmilz/r-actions-example/runs/7273362628?check_suite_focus=true\nAfter a couple of minutes, we can see that the action succeeded:\n\n\n\n\nWe can check the directory 01-monitoring-quarto-repos, and there are two new files with the results from the script: quarto_repos.csv and README.md. In this README.md, we can monitor the repositories in the quarto organizations and see which are the most popular repositories!\n\n\n\n\nSee the complete list here: https://github.com/beatrizmilz/awesome-gha/tree/main/01-monitoring-quarto-repos#readme\n\n\n\n\n\n\nWhat if it does not work!?\n\n\n\nThe workflow can fail if everything is not correct. For example, the workflow will fail if we forget to install a package used in the script. If this happens, you will probably receive an email from GitHub with an alert.\nBut don’t be scared! This is pretty common. When I started using GHA in 2020, I got several failures before success. My tip in these cases is: to breathe, be calm, read the logs (the text on the black page I showed in the GIF above) and start debugging."
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#see-you-in-the-next-post",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#see-you-in-the-next-post",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "See you in the next post!",
+    "text": "See you in the next post!\nI hope this post was useful to you!\nStay tuned!"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#references",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#references",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "References",
+    "text": "References\n\nAll the files created in this repository are available here\nGitHub Actions\nPackage usethis\nr-lib/actions Repository\nGitHub documentation about workflows\nUnderstanding the workflow file\n\nThanks for reviewing the post, Julio Trecenti!"
+  },
+  {
+    "objectID": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#share-and-support",
+    "href": "posts/series-gha/2022-series-gha-2-creating-your-first-action/en/index.html#share-and-support",
+    "title": "Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users",
+    "section": "Share and support!",
+    "text": "Share and support!\nIf you like these kind of content, consider supporting me at GitHub Sponsors, or sharing it on Twitter.\n\n\n\n\n2 WEEKS UNTIL #rstudioconf2022!🎉The 2nd post about using GitHub Actions for R users is out!I show how to write a workflow that uses R to collect data about the repos by @quarto_pub on GitHub and save the results!https://t.co/4Y6HkyZwgx#rstats #github #rstudioconf @rstudio\n\n— Beatriz Milz (@BeaMilz) July 11, 2022"
+  },
+  {
+    "objectID": "posts/es.html",
+    "href": "posts/es.html",
+    "title": "Bea Milz",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/pt.html",
+    "href": "posts/pt.html",
+    "title": "Bea Milz",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\nUsando senhas, tokens e keys no código em R de forma segura.\n\n\n\n\nTutorial\n\n\n \n\n\n\n\nSep 13, 2022\n\n\nBeatriz Milz\n\n\n8 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about-es.html",
+    "href": "about-es.html",
+    "title": "Beatriz Milz",
+    "section": "",
+    "text": "¡Hola! Mi nombre es Beatriz y soy una R-Lady de Brasil 🇧🇷 💜.\nSoy instructora de tidyverse certificada por RStudio y enseño R en Curso-R.\nEmpecé a escribir textos sobre R en 2019.\nSoy activa en la comunidad R en Brasil, participando en la coorganización de comunidades y eventos, como: R-Ladies São Paulo, Latin-R, y satRday São Paulo.\nEstoy haciendo un doctorado en la Universidad de São Paulo, en Ciencias Ambientales. Mi investigación trata sobre la transparencia de la información en la gestión de los recursos hídricos utilizados para el abastecimiento público en la Macrometrópolis de São Paulo."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Bea Milz",
+    "section": "",
+    "text": "19 a 23 de junho de 2023 - Manaus, AM, Brasil - I Conferência Internacional de Políticas Públicas e Ciência de Dados\n24 de novembro de 2023 - Medellín, Colombia - RDay Medellín\n\n\n\n\n\n2023 - Cursos na Curso-R.\n\nFormulário de bolsas de diversidade.\nOs materiais dos cursos estão disponíveis online.\n\n2023 - Cursos no CEBRAP.lab:\n\nIntrodução a linguagem de programação R\nVisualização de dados no R\nAnálise quantitativa de texto\n\n2024 - Janeiro/Fevereiro - Curso de verão no IME/USP - Relatórios reprodutíveis em R. Materiais: 2022, 2023."
+  },
+  {
+    "objectID": "talks/index.html#invitations-convites",
+    "href": "talks/index.html#invitations-convites",
+    "title": "Bea Milz",
+    "section": "Invitations / Convites",
+    "text": "Invitations / Convites\nPlease email me at: milz.bea@gmail.com"
+  },
+  {
+    "objectID": "talks/index.html#talkspalestras",
+    "href": "talks/index.html#talkspalestras",
+    "title": "Bea Milz",
+    "section": "Talks/Palestras",
+    "text": "Talks/Palestras\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRelatórios reprodutíveis com R\n\n\n\nJan 23, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR translatón/Hackaton de tradução do R\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaking awesome automations with GitHub Actions\n\n\nrstudio::conf(2022)\n\n\n\nJul 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/pt/2023-verao-ime-usp-relatorios/index.html",
+    "href": "talks/pt/2023-verao-ime-usp-relatorios/index.html",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "",
+    "text": "Programa de Verão IME-USPLink do evento: https://www.ime.usp.br/verao/index.php/turmas/apresentacao.phpLugar: Online\nMateriais\n\n\n Materiais  Slides"
+  },
+  {
+    "objectID": "talks/pt/index.html",
+    "href": "talks/pt/index.html",
+    "title": "Apresentações em português",
+    "section": "",
+    "text": "Minhas apresentações anteriores estão neste link. Aos poucos irei migrar o conteúdo para essa página :)\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nRelatórios reprodutíveis com R\n\n\n\n\n\n\n\n\n\nJan 23, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/es/2022-latinr-translaton/index.html",
+    "href": "talks/es/2022-latinr-translaton/index.html",
+    "title": "R translatón/Hackaton de tradução do R",
+    "section": "",
+    "text": "Latin-R 2022Link do evento: https://latin-r.com/Lugar: Online\nMateriais\n\n\n Slides"
+  },
+  {
+    "objectID": "talks/es/index.html",
+    "href": "talks/es/index.html",
+    "title": "Presentaciones en español",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\nOct 15, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/en/index.html",
+    "href": "talks/en/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\nrstudio::conf(2022)\n\n\n\n\n\n\nJul 28, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/en/2022-rstudio-conf/index.html",
+    "href": "talks/en/2022-rstudio-conf/index.html",
+    "title": "Making awesome automations with GitHub Actions",
+    "section": "",
+    "text": "Event: rstudio::conf(2022)\nTalk video\nSlides"
+  },
+  {
+    "objectID": "talks/en/2022-rstudio-conf/index.html#complementary-materials",
+    "href": "talks/en/2022-rstudio-conf/index.html#complementary-materials",
+    "title": "Making awesome automations with GitHub Actions",
+    "section": "Complementary materials",
+    "text": "Complementary materials\n\nBlog post: How important is GitHub Actions to RStudio/Posit? Code for a plot in my talk!\nBlog post: Introduction to GitHub Actions to R users\nBlog post: Monitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users\nGitHub repository: awesome-gha - Awesome GitHub Actions for R\nPublic workflow examples:\n\nsigbm - This repository has a workflow that downloads the excel file with public data related to mining dams in Brazil, every day, and stores it in the repository. There is no R code!\nnoticiasgov - This repository has a workflow that scrapes news from the official government of Sao Paulo page, and stores it in a CSV file."
+  },
+  {
+    "objectID": "talks/en/2022-rstudio-conf/index.html#slides",
+    "href": "talks/en/2022-rstudio-conf/index.html#slides",
+    "title": "Making awesome automations with GitHub Actions",
+    "section": "Slides",
+    "text": "Slides\n\nSlides:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bea Milz",
+    "section": "",
+    "text": "Sep 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all/Ver todos"
+  },
+  {
+    "objectID": "index.html#recent-talks-palestras-recentes",
+    "href": "index.html#recent-talks-palestras-recentes",
+    "title": "Bea Milz",
+    "section": "Recent Talks / Palestras recentes",
+    "text": "Recent Talks / Palestras recentes\n Next activities/Atividades futuras\n\n\n\n\n\n\n\n\n\n\nRelatórios reprodutíveis com R\n\n\n\nJan 23, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR translatón/Hackaton de tradução do R\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaking awesome automations with GitHub Actions\n\n\nrstudio::conf(2022)\n\n\n\nJul 28, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all/Ver todas"
+  },
+  {
+    "objectID": "index.html#posts-in-english",
+    "href": "index.html#posts-in-english",
+    "title": "Bea Milz",
+    "section": "Posts in English",
+    "text": "Posts in English\n\n\n\n\n  \n\n\n\n\nMonitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users\n\n\nGitHub Actions Series 2 - In this post, I will show how you can create a workflow to monitor repositories from the quarto-dev organization on GitHub!\n\n\n\n\nGit\n\n\nGitHub\n\n\nGitHub Actions\n\n\nAutomations\n\n\nRStudio\n\n\n \n\n\n\n\nJul 10, 2022\n\n\nBeatriz Milz\n\n\n12 min\n\n\n\n\n\n\nNo matching items\n\n\n See all posts in English"
+  },
+  {
+    "objectID": "index.html#posts-em-português",
+    "href": "index.html#posts-em-português",
+    "title": "Bea Milz",
+    "section": "Posts em Português",
+    "text": "Posts em Português\n\n\n\n\n  \n\n\n\n\nComo usar senhas sem escreve-las nos scripts\n\n\nUsando senhas, tokens e keys no código em R de forma segura.\n\n\n\n\nTutorial\n\n\n \n\n\n\n\nSep 13, 2022\n\n\nBeatriz Milz\n\n\n8 min\n\n\n\n\n\n\nNo matching items\n\n\n Ver posts em Português"
+  },
+  {
+    "objectID": "index.html#posts-en-español",
+    "href": "index.html#posts-en-español",
+    "title": "Bea Milz",
+    "section": "Posts en Español",
+    "text": "Posts en Español\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "Quarto Gallery",
+    "section": "",
+    "text": "I like Quarto - a lot! Here is some of the content that I made using Quarto."
+  },
+  {
+    "objectID": "quarto.html#websites",
+    "href": "quarto.html#websites",
+    "title": "Quarto Gallery",
+    "section": "Websites",
+    "text": "Websites\n\nMy personal blog: https://beamilz.com/\nR-Ladies Sao Paulo blog: https://rladies-sp.org/\nMy fianceé and I made our wedding website with Quarto: https://beaeju.com.br/"
+  },
+  {
+    "objectID": "quarto.html#presentations",
+    "href": "quarto.html#presentations",
+    "title": "Quarto Gallery",
+    "section": "Presentations",
+    "text": "Presentations\n\nUtilizando GitHub Actions para baixar dados públicos\n\nThere are more presentations made with Quarto in: Talks."
+  },
+  {
+    "objectID": "quarto.html#presentation-templates",
+    "href": "quarto.html#presentation-templates",
+    "title": "Quarto Gallery",
+    "section": "Presentation templates",
+    "text": "Presentation templates\n\nR-Ladies Quarto Theme - a theme for Slides https://github.com/beatrizmilz/quarto-rladies-theme\nSlides Curso-R - https://github.com/curso-r/quarto-cursor-theme"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Beatriz Milz",
+    "section": "",
+    "text": "Hi! My name is Beatriz, and I am a R-Lady from Brazil 🇧🇷 💜.\nI’m a tidyverse instructor certified by RStudio, and I teach R at Curso-R.\nI have been writing about R in my blog since 2019. I’m mostly active in the Brazilian R community, co-organizing communities and events, such as: R-Ladies São Paulo, Latin-R, and satRday São Paulo.\nI’m a PhD Candidate at the University of São Paulo, in Environmental Sciences. My research is about transparency of information in the management of water resources that are used to supply the Macrometropolis of Sao Paulo."
+  },
+  {
+    "objectID": "series-gha.html",
+    "href": "series-gha.html",
+    "title": "GitHub Actions Series: Making awesome automations",
+    "section": "",
+    "text": "Here you can find a series of posts about GitHub Actions, which are complementary material for my lightning talk at the RStudio Conference - rstudio::conf 2022."
+  },
+  {
+    "objectID": "series-gha.html#posts-in-english",
+    "href": "series-gha.html#posts-in-english",
+    "title": "GitHub Actions Series: Making awesome automations",
+    "section": "Posts in English",
+    "text": "Posts in English\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nMonitoring quarto-dev repositories: Creating a workflow with GitHub Actions for R users\n\n\nGitHub Actions Series 2 - In this post, I will show how you can create a workflow to monitor repositories from the quarto-dev organization on GitHub!\n\n\n\n\nGit\n\n\nGitHub\n\n\nGitHub Actions\n\n\nAutomations\n\n\nRStudio\n\n\n \n\n\n\n\nJul 10, 2022\n\n\nBeatriz Milz\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "series-gha.html#posts-em-português",
+    "href": "series-gha.html#posts-em-português",
+    "title": "GitHub Actions Series: Making awesome automations",
+    "section": "Posts em Português",
+    "text": "Posts em Português\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "series-gha.html#posts-en-español",
+    "href": "series-gha.html#posts-en-español",
+    "title": "GitHub Actions Series: Making awesome automations",
+    "section": "Posts en Español",
+    "text": "Posts en Español\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  }
+]
