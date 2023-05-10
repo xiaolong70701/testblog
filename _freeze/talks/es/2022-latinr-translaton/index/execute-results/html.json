@@ -1,0 +1,14 @@
+{
+  "hash": "d2908cb462efd7a8344c3782bc8598d1",
+  "result": {
+    "markdown": "---\ntoc: true\nauthor: \n  - \"Ángela Sanzo\"\n  - \"Beatriz Milz\"\n  - \"Caio Lente\"\n  - \"Heather Turner\"\n  - \"Macarena Quiroga\"\n  - \"Natalia da Silva\"\n  - \"Patricia Loto\"\n  - \"Riva Quiroga\"\n  - \"Yanina Bellini\"\n  - \"Latin-R Organizers\"\n  - \"R Contributors\"\ncategories: Tutorial\ndate: '2022-10-15'\nevent: 'Latin-R 2022'\nevent_url: https://latin-r.com/\nlinks:\n# - icon: images\n#   icon_pack: far\n#   name: Materiais\n#   url: \n- icon: images\n  icon_pack: far\n  name: Slides\n  url: https://github.com/beatrizmilz/blog-en/blob/main/talks/es/2022-latinr-translaton/slides_translaton.pdf\n# - icon: video\n#   icon_pack: fa\n#   name: Gravação\n#   url: https://youtu.be/\nlocation: Online\ntitle: \"R translatón/Hackaton de tradução do R\"\nimage: featured.png\n---\n\n<script src=\"https://kit.fontawesome.com/1bb720cc6f.js\" crossorigin=\"anonymous\"></script><b>Evento: </b>Latin-R 2022<br><b>Link do evento:</b> <a href='https://latin-r.com/'>https://latin-r.com/</a><br><b>Lugar: </b>Online<br><h2> Materiais</h2> <br><center><a href='https://github.com/beatrizmilz/blog-en/blob/main/talks/es/2022-latinr-translaton/slides_translaton.pdf' target='_blank' rel='noopener'><button class='btn btn-primary' style='margin: 10px;'><i class='fa-solid fa-images'></i> Slides</a></button>  <br><br><img src='featured.png' class='img-fluid quarto-figure-center' style='max-width:80%'><br></center>\n\n\n------------------------------------------------------------------------\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

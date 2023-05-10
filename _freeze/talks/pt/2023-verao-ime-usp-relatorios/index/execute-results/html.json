@@ -1,0 +1,14 @@
+{
+  "hash": "21cdd46a1512aa8498a6d2905cb53be2",
+  "result": {
+    "markdown": "---\n# THIS FILE WAS CONVERTED FROM BLOGDOWN!\ntoc: true\nauthor: Beatriz Milz\ncategories: Curso\ndate: '2023-01-23'\nevent: Programa de Verão IME-USP\nevent_url: https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php\nlinks:\n- icon: images\n  icon_pack: far\n  name: Materiais\n  url: https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/\n- icon: images\n  icon_pack: far\n  name: Slides\n  url: https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/slides.html\nlocation: Online\ntitle: Relatórios reprodutíveis com R\nimage: featured.png\n---\n\n<script src=\"https://kit.fontawesome.com/1bb720cc6f.js\" crossorigin=\"anonymous\"></script><b>Evento: </b>Programa de Verão IME-USP<br><b>Link do evento:</b> <a href='https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php'>https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php</a><br><b>Lugar: </b>Online<br><h2> Materiais</h2> <br><center><a href='https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/' target='_blank' rel='noopener'><button class='btn btn-primary' style='margin: 10px;'><i class='fa-solid fa-images'></i> Materiais</a></button>  <a href='https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/slides.html' target='_blank' rel='noopener'><button class='btn btn-primary' style='margin: 10px;'><i class='fa-solid fa-images'></i> Slides</a></button>  <br><br><img src='featured.png' class='img-fluid quarto-figure-center' style='max-width:80%'><br></center>\n\n\n------------------------------------------------------------------------\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
